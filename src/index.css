@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --mainText: #22343d;
+  --mainTextHover: #02897a;
+  /* colors */
+  --colorPrimary: #000;
+  --colorSecondary: #000;
+  --mainTextColor: #22343d;
+  /* background */
+  --mainBg: #1f2e35;
+  --backgroundPrimary: #fff;
+  --backgroundSecondary: #000;
+  --btnBg: #02897a;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  flex-direction: column;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--backgroundPrimary);
+  color: var(--colorPrimary);
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.swiper-wrapper{
+  padding-bottom: 70px;
+}
+
+/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 0px !important;
+} */
