@@ -111,7 +111,6 @@ const Travels = () => {
                       {t("box_button_text")}
                     </span>
                   </button>
-                  <button></button>
                 </div>
               </SwiperSlide>
             ))}
