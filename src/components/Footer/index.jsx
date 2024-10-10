@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="mt-[80px] bg-[#01294C] p-[40px]">
       <div className="container">
-        <div className="flex justify-between items-start border-b-2 pb-[30px]">
-          <div>
+        <div className="flex justify-between items-start max-md:flex-col max-md:gap-8 border-b-2 pb-[30px]">
+          <div className="max-md:flex max-md:flex-col max-md:gap-5">
             <h2 className="text-[38px] font-extrabold text-white w-[600px]  mt-0 mb-1  leading-[50px]">
               {t("footer_title")}
             </h2>
@@ -38,7 +38,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="flex w-1/3 justify-between">
+          <div className="flex w-1/3 justify-between max-md:gap-10">
             <div className="flex flex-col text-[24px] font-medium text-white mb-4">
               <p>{t("footer_subtitle1")}</p>
               <Link>{t("home")}</Link>

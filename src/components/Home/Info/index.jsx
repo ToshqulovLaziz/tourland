@@ -8,7 +8,7 @@ const Info = () => {
   const { t } = useTranslation();
   return (
     <>
-      <section className="relative top-[-100px]">
+      <section className="relative top-[-100px] max-md:top-[-50px]">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]">

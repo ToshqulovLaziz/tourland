@@ -28,12 +28,12 @@ const FormList = () => {
     <section className=" mt-[60px]">
       <div className="container">
         <div className=" shadow-2xl py-[40px] px-[70px] rounded-2xl">
-          <h2 className="text-center text-[32px] font-extrabold mb-3">
+          <h2 className="text-center text-[32px] max-md:text-[26px] font-extrabold mb-3">
             {t("form_title")}
           </h2>
           <Form onFinish={(values) => onFinish(values)} layout="vertical">
-            <div className="flex justify-between">
-              <div className="w-[450px]">
+            <div className="flex justify-between max-md:gap-4">
+              <div className="w-[450px] max-md:w-1/2">
                 <Form.Item
                   name="your_name"
                   label={t("form_name")}
@@ -76,7 +76,7 @@ const FormList = () => {
                   />
                 </Form.Item>
               </div>
-              <div className="w-[450px]">
+              <div className="w-[450px]  max-md:w-1/2">
                 <Form.Item
                   name="phone"
                   label={t("form_phone")}
