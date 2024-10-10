@@ -53,20 +53,20 @@ const Fackts = () => {
   return (
     <section className="py-[90px]">
       <div className="container">
-        <h2 className="font-bold leading-[70px] text-[32px] mb-0 text-[#2A2A2A]">
+        <h2 className="max-lg:w-[60%] m-auto max-md:text-center font-bold leading-[70px]  max-lg:leading-[30px] max-md:mb-4 text-[32px] max-lg:text-[24px] text-[#2A2A2A]">
           {t("fackts_title")}
         </h2>
-        <p className="text-[16px] w-1/2 font-mono mb-[30px] text-[#2A2A2A]">
+        <p className="text-[16px]  w-1/2 max-md:m-auto max-md:mb-[40px]  max-md:text-center font-mono mb-[30px] text-[#2A2A2A]">
           {t("fackts_text")}
         </p>
         <div className="flex flex-col gap-8">
           {facktsData.map((item) => (
             <div
-              className="flex justify-between items-start gap-10 pb-10 border-b-2 border-[#000] last:border-none"
+              className="flex justify-between items-start max-md:flex-col gap-10 pb-10 border-b-2 border-[#000] last:border-none"
               key={item.id}
             >
               <img
-                className="w-1/3 h-[250px] rounded-3xl"
+                className="w-1/3 h-[250px] max-md:w-full rounded-3xl"
                 src={item.img}
                 alt={item.title}
               />

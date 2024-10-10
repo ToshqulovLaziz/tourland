@@ -1,19 +1,24 @@
 import { Link } from "react-router-dom";
 import { Select } from "antd";
+import { MenuOutlined, CloseSquareOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLanguage } from "../../redux/languageSlice";
+import { setHamburgerBtn } from "../../redux/modalSlice";
+import HamburgerBtn from "./HamburgerBtn";
 const Header = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
+  const { hamburgerBtn } = useSelector((state) => state.modal);
   const language = useSelector((state) => state.language.language);
 
   const handleChange = (value) => {
-    dispatch(changeLanguage(value))
+    dispatch(changeLanguage(value));
   };
   return (
     <>
       <header className="sticky top-0 bg-[#fff] z-50">
+        <HamburgerBtn />
         <div className="container">
           <div className="flex justify-between items-center py-[10px]">
             <div>
@@ -25,7 +30,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex justify-between items-center gap-[150px]">
+            <div className="flex justify-between items-center gap-[150px] max-lg:gap-10 max-md:hidden">
               <div>
                 <ul className="flex gap-6 text-[24px]">
                   <li>
@@ -83,6 +88,14 @@ const Header = () => {
                 </div>
               </div>
             </div>
+            {hamburgerBtn ? (
+              <CloseSquareOutlined className="text-[30px]"/>
+            ) : (
+              <MenuOutlined
+                className=" hidden max-md:inline-block text-[30px]"
+                onClick={() => dispatch(setHamburgerBtn())}
+              />
+            )}
           </div>
         </div>
       </header>

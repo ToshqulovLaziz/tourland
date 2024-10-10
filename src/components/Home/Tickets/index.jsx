@@ -23,7 +23,7 @@ const Tickets = () => {
   return (
     <section className="pt-[70px]">
       <div className="container">
-        <h2 className="text-center font-bold leading-[70px] text-[32px] text-[#2A2A2A]">
+        <h2 className="max-lg:w-[60%] m-auto text-center font-bold leading-[70px]  max-lg:leading-[30px] max-md:mb-4 text-[32px] max-lg:text-[24px] text-[#2A2A2A]">
           {t("tickets_title")}
         </h2>
         <p className="text-center text-[18px] w-1/2 font-mono m-auto mb-[30px] text-[#2A2A2A]">
@@ -32,11 +32,11 @@ const Tickets = () => {
         <div>
           {ticketsData.map((item) => (
             <div
-              className="flex justify-between items-center gap-10 first:pb-8 last:pt-8 first:border-b-2"
+              className="flex justify-between items-center max-lg:flex-col gap-10 first:pb-8 last:pt-8 first:border-b-2"
               key={item.id}
             >
               <img
-                className="w-1/3 rounded-3xl"
+                className="w-1/3 max-lg:w-full rounded-3xl"
                 src={item.img}
                 alt={item.title}
               />
