@@ -30,7 +30,6 @@ const Travels = () => {
             slidesPerView={3.5}
             spaceBetween={40}
             loop={true}
-            // style={{alignContent: "center"}}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -105,7 +104,7 @@ const Travels = () => {
           >
             {travelsData.map((item) => (
               <SwiperSlide key={item.id}>
-                <div  className="max-sm:w-full m-auto">
+                <div className="max-sm:w-full m-auto">
                   <img
                     className="w-[280px] m-auto max-md:w-[320px] h-[410px] rounded-l-3xl rounded-bl-3xl"
                     src={item.img_url}
