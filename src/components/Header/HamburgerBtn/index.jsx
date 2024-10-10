@@ -17,16 +17,16 @@ const HamburgerBtn = () => {
       <div className="flex justify-center mt-4">
         <ul className="flex flex-col items-center gap-4 text-[18px]">
           <li>
-            <Link to="/">{t("home")}</Link>
+            <Link onClick={() => dispatch(setHamburgerBtn())} to="/">{t("home")}</Link>
           </li>
           <li>
-            <Link to="/about">{t("about")}</Link>
+            <Link onClick={() => dispatch(setHamburgerBtn())} to="/about">{t("about")}</Link>
           </li>
           <li>
-            <Link to="/tours">{t("tours")}</Link>
+            <Link onClick={() => dispatch(setHamburgerBtn())} to="/tours">{t("tours")}</Link>
           </li>
           <li>
-            <Link to="/contact">{t("contact")}</Link>
+            <Link onClick={() => dispatch(setHamburgerBtn())} to="/contact">{t("contact")}</Link>
           </li>
         </ul>
       </div>
