@@ -13,6 +13,7 @@ const HamburgerBtn = () => {
   const { hamburgerBtn } = useSelector((state) => state.modal);
   const handleChange = (value) => {
     dispatch(changeLanguage(value));
+    dispatch(setHamburgerBtn());
   };
   return (
     <Modal
@@ -76,7 +77,7 @@ const HamburgerBtn = () => {
             </button>
             <button>
               <img
-              className="ml-4"
+                className="ml-4"
                 width={"30"}
                 src="https://firebasestorage.googleapis.com/v0/b/greenshop-d3fdb.appspot.com/o/icons8-instagram.svg?alt=media&token=95ce931d-a408-4bd1-b584-464de31590b6"
                 alt="instagarm icon"
