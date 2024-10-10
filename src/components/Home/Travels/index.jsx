@@ -103,7 +103,7 @@ const Travels = () => {
                     <CheckOutlined className="pr-1" /> {t("assistanse_text")}
                   </span>
                   <button
-                    className="relative inline-flex items-center font-mono justify-center px-8 py-2 text-[16px] transition-all bg-blue-500 rounded-2xl group overflow-hidden"
+                    className="relative inline-flex items-center font-mono justify-center px-8 py-2 text-[16px] transition-all bg-blue-400 rounded-2xl hover:border-2 hover:border-blue-500 group overflow-hidden"
                     onClick={() => dispatch(setModalVisibility())}
                   >
                     <span className="absolute inset-0 bg-[#fff] transition-transform duration-500 -translate-x-full group-hover:translate-x-0"></span>

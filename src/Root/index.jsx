@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Home from "../components/Home";
 import ModalVisibilty from "../components/Modal";
@@ -5,9 +6,10 @@ import ModalVisibilty from "../components/Modal";
 const Root = () => {
   return (
     <>
-      <ModalVisibilty/>
+      <ModalVisibilty />
       <Header />
       <Home />
+      <Footer />
     </>
   );
 };

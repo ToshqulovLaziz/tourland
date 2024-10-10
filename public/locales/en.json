@@ -20,5 +20,68 @@
   "price_text": "Best price",
   "time_text": "Short Processing Time",
   "assistanse_text": "Trustworthy Assistance",
-  "box_button_text": "Make A Reservation"
+  "box_button_text": "Make A Reservation",
+  "tickets_title": "Find Tickets With us Easily and at a Low Price",
+  "tickets_subtitle": "Find the best deals on railway and airplane tickets in each city, carefully selected for you.",
+  "tickets_list1": {
+    "tickets_list_title1": "Cheap Railway Tickets With Us",
+    "tickets_list_subtitle1": "Whole world",
+    "tickets_list_text1": "Embark on a railway adventure and explore destinations worldwide. Whether its the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network."
+  },
+  "tickets_list2": {
+    "tickets_list_title2": "Discover Exciting Air Travel Deals",
+    "tickets_list_subtitle2": "Global Destinations",
+    "tickets_list_text2": "Embark on a railway adventure and explore destinations worldwide. Whether its the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network."
+  },
+  "fackts_title": "Interesting facts about China",
+  "fackts_text": "China has a unique garden culture and history. In this section, we will provide you with interesting information.",
+  "fackts_list1": {
+    "fackts_title": "Tea culture",
+    "fackts_subtitle": "Chinese Tea Culture",
+    "fackts_text": "Chinese tea culture has developed over centuries and is one of the oldest traditions in the world. Drinking tea has become an integral part of daily life for the Chinese people, and this culture reflects not only the method of preparing the beverage but also the respect for health and spirit."
+  },
+  "fackts_list2": {
+    "fackts_title": "The Middle Kingdom",
+    "fackts_subtitle": "China, The Middle Kingdom",
+    "fackts_text": "(In Chinese, Tiānxià — 天下) is a concept of great significance in Chinese culture and history. This ancient phrase is used to describe China and the worldview associated with it. The concept of the Middle Kingdom developed during the imperial era of China, where it was seen as the place ruled by Heaven (Tian), and this rule was considered to extend to everything on Earth."
+  },
+  "fackts_list3": {
+    "fackts_title": "Chinese cuisine",
+    "fackts_subtitle": "The Diversity of Chinese Cuisine",
+    "fackts_text": "Chinese cuisine is famous worldwide for its diversity of dishes. Each region is known for its unique dishes, for example, Sichuan cuisine is known for its spiciness, while Beijing is famous for Peking duck."
+  },
+  "fackts_list4": {
+    "fackts_title": "The homeland of pandas",
+    "fackts_subtitle": "Pandas – A Diplomatic Symbol of China",
+    "fackts_text": "Giant pandas play an important role in Chinese diplomacy. China has temporarily leased its pandas to other countries to strengthen diplomatic relations. This is known as panda diplomacy and is used to enhance China's relationships with international partners. The leased pandas can be seen in various zoos around the world, many of them in the USA, Japan, and European countries."
+  },
+  "fackts_button_text": "Need Directions ?",
+  "u_button_text": "Explore More",
+  "reservation_subtitle": "Book Prefered Deal Here",
+  "reservation_title": "Make Your Reservation",
+  "reservation_btn_text": "Discover More",
+  "info_title1": "Make a Phone Call",
+  "info_title2": "Contact Us via Email",
+  "info_title3": "Visit Our Offices",
+  "form_title": "Make Your Reservation Through This Form",
+  "form_name": "Your Name",
+  "form_nama_ph": "Ex. John Smith",
+  "form_num": "Number of Guests",
+  "form_num_ph": "Ex. 1 or 2 or 3",
+  "form_phone": "Your Phone Number",
+  "form_date": "Check In Date",
+  "form_destination": "Choose Your Destination",
+  "form_destination_ph": "Ex. China",
+  "form_destination_select1": "China",
+  "form_destination_select2": "Beijing",
+  "form_support": "Choose Your Visa Support",
+  "form_support_ph": "Ex. China",
+  "form_support_select1": "China",
+  "form_support_select2": "Pekin",
+  "form_btn_text": "Make A Reservation Now",
+  "footer_title": "Tourland guarantees quality and reliable service.",
+  "footer_text": "You deserve the best, Tourland is the best choice!",
+  "footer_subtitle1": "Useful Links",
+  "footer_subtitle2": "Other Resources",
+  "footer_copy": "Copyright © 2024 WebMasters Creative Tim."
 }

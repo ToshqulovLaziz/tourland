@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import languageReducer from "./languageSlice";
-import modalSlice from "./modalSlice";
+import modalReducer from "./modalSlice";
+import galleryReducer from "./gallerySlice"
 
 export const store = configureStore({
   reducer: {
     language: languageReducer,
-    modal: modalSlice,
+    modal: modalReducer,
+    gallery: galleryReducer
   },
 });
