@@ -26,9 +26,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-* {
-  scroll-behavior: smooth;
-}
 body {
   margin: 0;
   height: 100%;
@@ -40,33 +37,8 @@ body {
   color: var(--colorPrimary);
 }
 .container {
-  width: 1240px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1240px;
 }
-main {
-  flex-grow: 1;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 ul,
 ol {
   margin-top: 0;

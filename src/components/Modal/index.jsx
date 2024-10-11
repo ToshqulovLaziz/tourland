@@ -35,78 +35,79 @@ const ModalVisibility = () => {
         open={modalVisibility}
         onCancel={() => dispatch(setModalVisibility())}
         footer={false}
+        className="fixed inset-0  flex justify-center items-center z-50"
       >
-        <div className="w-full inline-block mt-10 mb-5 text-center">
-          <UserOutlined className="text-[20px] p-3 rounded-full bg-[#A3E635] text-white" />
-        </div>
-        <Form
-          className="flex flex-col justify-between items-center"
-          onFinish={(values) => onFinish(values, form)}
-          form={form} 
-        >
-          <div className="flex justify-between gap-4">
-            <div>
-              <Form.Item
-                name="firstName"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your First name!",
-                  },
-                ]}
-              >
-                <Input className="w-[200px]" placeholder={t("firstName")} />
-              </Form.Item>
-              <Form.Item
-                name="lastName"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your Last name!",
-                  },
-                ]}
-              >
-                <Input className="w-[200px]" placeholder={t("lastName")} />
-              </Form.Item>
+        <div className="w-full px-6 py-8 bg-white rounded-lg  max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+          <div className="flex flex-col justify-between items-center">
+            <div className="text-center mb-5">
+              <UserOutlined className="text-[20px] p-3 rounded-full bg-[#A3E635] text-white" />
             </div>
-            <div>
-              <Form.Item
-                name="phone"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your phone number!",
-                  },
-                ]}
-              >
-                <Input
-                  addonBefore={prefixSelector}
-                  placeholder={t("phoneNumber")}
-                  className="w-[200px]"
-                />
-              </Form.Item>
-              <Form.Item
-                name="username"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your Username!",
-                  },
-                ]}
-              >
-                <Input className="w-[200px]" placeholder={t("username")} />
-              </Form.Item>
-            </div>
-          </div>
-          <Form.Item>
-            <Button
-              className="bg-[#A3E635] text-white font-bold"
-              htmlType="submit"
+            <Form
+              className="flex flex-col justify-between items-center"
+              onFinish={(values) => onFinish(values, form)}
+              form={form}
             >
-              Submit
-            </Button>
-          </Form.Item>
-        </Form>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Form.Item
+                  name="firstName"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your First name!",
+                    },
+                  ]}
+                >
+                  <Input className="w-full" placeholder={t("firstName")} />
+                </Form.Item>
+                <Form.Item
+                  name="lastName"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your Last name!",
+                    },
+                  ]}
+                >
+                  <Input className="w-full" placeholder={t("lastName")} />
+                </Form.Item>
+                <Form.Item
+                  name="phone"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your phone number!",
+                    },
+                  ]}
+                >
+                  <Input
+                    addonBefore={prefixSelector}
+                    placeholder={t("phoneNumber")}
+                    className="w-full"
+                  />
+                </Form.Item>
+                <Form.Item
+                  name="username"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your Username!",
+                    },
+                  ]}
+                >
+                  <Input className="w-full" placeholder={t("username")} />
+                </Form.Item>
+              </div>
+              <Form.Item>
+                <Button
+                  className="bg-[#A3E635] text-white font-bold"
+                  htmlType="submit"
+                >
+                  Submit
+                </Button>
+              </Form.Item>
+            </Form>
+          </div>
+        </div>
       </Modal>
     </>
   );

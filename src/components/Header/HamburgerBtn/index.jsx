@@ -20,9 +20,9 @@ const HamburgerBtn = () => {
       open={hamburgerBtn}
       onCancel={() => dispatch(setHamburgerBtn())}
       footer={false}
-      className="fixed top-0 left-0 right-0 bottom-0  bg-opacity-75 p-4 overflow-auto"
+      // className="fixed top-0 right-0 bottom-0 z-50 bg-gray-900 bg-opacity-75 p-4 overflow-y-auto md:hidden"
     >
-      <div className="flex justify-center mt-4">
+      <div className="flex flex-col items-center justify-center h-full">
         <ul className="flex flex-col items-center gap-4 text-[18px]">
           <li>
             <Link onClick={() => dispatch(setHamburgerBtn())} to="/">

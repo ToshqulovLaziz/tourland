@@ -17,8 +17,8 @@ const Header = () => {
   };
   return (
     <>
+      <HamburgerBtn />
       <header className="sticky top-0 bg-[#fff] z-50">
-        <HamburgerBtn />
         <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
           <div className="flex justify-between items-center py-[10px]">
             <div>
@@ -30,7 +30,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex justify-between items-center gap-[150px] max-lg:gap-10 max-md:hidden">
+            <div className="flex justify-between items-center gap-[150px] max-lg:gap-10 max-lg:hidden">
               <div>
                 <ul className="flex gap-6 text-[24px]">
                   <li>
@@ -89,10 +89,10 @@ const Header = () => {
               </div>
             </div>
             {hamburgerBtn ? (
-              <CloseSquareOutlined className="text-[30px]"/>
+              <CloseSquareOutlined className="text-[30px]" />
             ) : (
               <MenuOutlined
-                className=" hidden max-md:inline-block text-[30px]"
+                className=" hidden max-lg:inline-block text-[30px]"
                 onClick={() => dispatch(setHamburgerBtn())}
               />
             )}
