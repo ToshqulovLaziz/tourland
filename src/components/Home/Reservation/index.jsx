@@ -5,7 +5,7 @@ const Reservation = () => {
   const {t} = useTranslation();
   return (
     <section className="bg-cover bg-center  bg-info-bg bg-no-repeat">
-      <div className="container">
+      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
         <div className="flex flex-col justify-center h-[608px] max-md:h-[408px] items-center">
           <h3 className="text-white text-center text-[24px] max-md:text-[20px]">{t("reservation_subtitle")}</h3>
           <div className="h-[2px] bg-[#fafafa] w-[100px] mt-6 mb-10 max-md:mb-3"></div>

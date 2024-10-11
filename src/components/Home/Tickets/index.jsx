@@ -22,11 +22,11 @@ const Tickets = () => {
   ];
   return (
     <section className="pt-[70px]">
-      <div className="container">
-        <h2 className="max-lg:w-[60%] m-auto text-center font-bold leading-[70px]  max-lg:leading-[30px] max-md:mb-4 text-[32px] max-lg:text-[24px] text-[#2A2A2A]">
+      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+        <h2 className="max-lg:w-[60%] max-sm:w-[80%] m-auto text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]">
           {t("tickets_title")}
         </h2>
-        <p className="text-center text-[18px] w-1/2 font-mono m-auto mb-[30px] text-[#2A2A2A]">
+        <p className="text-center text-[18px] max-sm:text-[14px] w-1/2 max-sm:w-[90%] font-mono m-auto mb-[30px] text-[#2A2A2A]">
           {t("tickets_subtitle")}
         </p>
         <div>
@@ -36,25 +36,25 @@ const Tickets = () => {
               key={item.id}
             >
               <img
-                className="w-1/3 max-lg:w-full rounded-3xl"
+                className="w-1/3 max-lg:w-full rounded-3xl max-sm:w-[90%]"
                 src={item.img}
                 alt={item.title}
               />
               <div>
-                <div className="flex justify-between items-start mb-5">
+                <div className="flex justify-between items-start mb-5  max-sm:items-center">
                   <div>
-                    <h3 className="font-bold  text-[22px] mb-1 text-[#2A2A2A]">
+                    <h3 className="font-bold text-[22px] max-sm:text-[18px] max-sm:w-[80%] mb-1 text-[#2A2A2A]">
                       {t(item.title)}
                     </h3>
                     <h4 className="text-[#AFAFAF] text-[18px]">
                       {item.sub_title}
                     </h4>
                   </div>
-                  <Link className="bg-[#B5DBF3] inline-bloc py-2 px-8 text-center font-mono text-[14px] rounded-3xl hover:bg-white border-2 hover:transition-colors border-[#B5DBF3]">
+                  <Link className="bg-[#B5DBF3] inline-block py-2 px-8 max-sm:px-5 text-center font-mono text-[14px]  rounded-3xl hover:bg-white border-2 hover:transition-colors border-[#B5DBF3]">
                     {item.button_text}
                   </Link>
                 </div>
-                <p className="text-[#AFAFAF] text-[18px] leading-[30px]">
+                <p className="text-[#AFAFAF] text-[18px] leading-[30px] max-sm:text-[16px]">
                   {item.text}
                 </p>
               </div>

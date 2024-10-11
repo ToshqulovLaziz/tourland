@@ -34,7 +34,7 @@ const Locations = () => {
 
   return (
     <section>
-      <div className="container">
+      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
         <div className="flex gap-4">
           {images.map((image, index) => (
             <div

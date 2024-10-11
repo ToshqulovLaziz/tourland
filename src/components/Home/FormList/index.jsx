@@ -26,14 +26,14 @@ const FormList = () => {
   };
   return (
     <section className=" mt-[60px]">
-      <div className="container">
+      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
         <div className=" shadow-2xl py-[40px] px-[70px] rounded-2xl">
-          <h2 className="text-center text-[32px] max-md:text-[26px] font-extrabold mb-3">
+          <h2 className="text-center text-[32px] max-md:text-[26px] max-sm:text-[22px] font-extrabold mb-3">
             {t("form_title")}
           </h2>
           <Form onFinish={(values) => onFinish(values)} layout="vertical">
-            <div className="flex justify-between max-md:gap-4">
-              <div className="w-[450px] max-md:w-1/2">
+            <div className="flex justify-between max-md:gap-4 max-[500px]:flex-col">
+              <div className="w-[450px] max-[500px]:w-full max-md:w-1/2">
                 <Form.Item
                   name="your_name"
                   label={t("form_name")}
@@ -76,7 +76,7 @@ const FormList = () => {
                   />
                 </Form.Item>
               </div>
-              <div className="w-[450px]  max-md:w-1/2">
+              <div className="w-[450px] max-[500px]:w-full  max-md:w-1/2">
                 <Form.Item
                   name="phone"
                   label={t("form_phone")}
@@ -155,7 +155,7 @@ const FormList = () => {
               />
             </Form.Item>
             <Button
-              className="bg-[#B5DBF3] text-white  w-full py-6 text-center font-extrabold text-[18px] rounded-3xl hover:bg-white border-2 hover:transition-colors border-[#B5DBF3]"
+              className="bg-[#B5DBF3] text-white  w-full py-6 text-center font-extrabold text-[18px] max-[430px]:text-[14px] rounded-3xl hover:bg-white border-2 hover:transition-colors border-[#B5DBF3]"
               htmlType="submit"
             >
               {t("form_btn_text")}
