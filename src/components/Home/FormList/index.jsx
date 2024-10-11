@@ -1,5 +1,5 @@
 import { Form, Input, Select, Button } from "antd";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
@@ -13,9 +13,7 @@ const FormList = () => {
   }, []);
   const prefixSelector = "+998";
   const notify = () =>
-    toast.success("Success message !", {
-      position: "top-right",
-    });
+    toast.success("Success message !");
   const onFinish = (values) => {
     const token = "7637529502:AAGgV86zm6gTXdHKaS1JknH8UnMOcwZvFQM";
     const chat_id = 1830065281;
@@ -129,7 +127,7 @@ const FormList = () => {
                     value: "Beijing",
                   },
                   {
-                    label: <span>{t("form_destination_select1")}</span>,
+                    label: <span>{t("form_destination_select2")}</span>,
                     value: "China",
                   },
                 ]}
@@ -149,7 +147,7 @@ const FormList = () => {
                 placeholder={t("form_support_ph")}
                 options={[
                   {
-                    label: <span>{t("form_support_select2")}</span>,
+                    label: <span>{t("form_support_select1")}</span>,
                     value: "China",
                   },
                   {
@@ -165,15 +163,6 @@ const FormList = () => {
             >
               {t("form_btn_text")}
             </Button>
-            <ToastContainer
-              autoClose={5000}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-              theme="light"
-            />
           </Form>
         </div>
       </div>
