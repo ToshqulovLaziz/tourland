@@ -29,7 +29,7 @@ const Tickets = () => {
   ];
   return (
     <section className="pt-[70px]">
-      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+      <div className="container max-w-full px-4 mx-auto">
         <h2
           className="max-lg:w-[60%] max-sm:w-[80%] m-auto text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]"
           data-aos="fade-up"

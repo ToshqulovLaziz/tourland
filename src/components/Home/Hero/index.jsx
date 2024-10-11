@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       <section className="h-[85vh] max-lg:h-[65vh] max-sm:h-[50vh]  bg-cover relative bg-center bg-neutral-100 bg-hero-pattern bg-blend-multiply bg-no-repeat filter brightness-75 contrast-125">
-        <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+        <div className="container max-w-full px-4 mx-auto">
           <div className="flex flex-col justify-center items-center text-[#fff] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h2
               className=" text-center text-white text-[34px] max-lg:text-[24px] max-sm:text-[18px]"

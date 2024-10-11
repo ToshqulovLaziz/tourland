@@ -59,7 +59,7 @@ const Fackts = () => {
   ];
   return (
     <section className="py-[90px] max-sm:py-[50px] max-sm:pb-0">
-      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+      <div className="container max-w-full px-4 mx-auto">
         <h2
           className="max-lg:w-[60%] max-sm:w-[80%] m-auto max-md:text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]"
           data-aos="fade-up"
@@ -94,7 +94,7 @@ const Fackts = () => {
                       {item.sub_title}
                     </h4>
                   </div>
-                  <Link className="bg-[#B5DBF3] inline-block py-3 px-8 font-mono text-[14px] max-sm:text-[12px] rounded-3xl hover:bg-white border-2 hover:transition-colors border-[#B5DBF3] max-sm:py-2 max-sm:px-6">
+                  <Link className="bg-[#B5DBF3] inline-block py-3 px-8 font-mono text-[14px] text-center max-sm:text-[12px] rounded-3xl hover:bg-white border-2 hover:transition-colors border-[#B5DBF3] max-sm:py-2 max-sm:px-6">
                     {t("u_button_text")}
                   </Link>
                 </div>

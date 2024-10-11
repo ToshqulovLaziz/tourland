@@ -11,7 +11,7 @@ const Reservation = () => {
   }, []);
   return (
     <section className="bg-cover bg-center  bg-info-bg bg-no-repeat">
-      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+      <div className="container max-w-full px-4 mx-auto">
         <div
           className="flex flex-col justify-center h-[608px] max-md:h-[408px] items-center"
           data-aos="fade-up"

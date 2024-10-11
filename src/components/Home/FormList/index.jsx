@@ -31,7 +31,7 @@ const FormList = () => {
   };
   return (
     <section className=" mt-[60px]" data-aos="fade-up">
-      <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+      <div className="container max-w-full px-4 mx-auto">
         <div className=" shadow-2xl py-[40px] px-[70px] rounded-2xl">
           <h2 className="text-center text-[32px] max-md:text-[26px] max-sm:text-[22px] font-extrabold mb-3">
             {t("form_title")}

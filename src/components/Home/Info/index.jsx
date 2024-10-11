@@ -16,7 +16,7 @@ const Info = () => {
   return (
     <>
       <section className="relative top-[-100px] max-md:top-[-50px]">
-        <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+        <div className="container max-w-full px-4 mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
             <div
               className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]"
@@ -58,7 +58,7 @@ const Info = () => {
         </div>
       </section>
       <section  data-aos="fade-up">
-        <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
+        <div className="container max-w-full px-4 mx-auto">
           <iframe
             className="w-full rounded-t-3xl shadow-card"
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d11990.80194929237!2d69.24442710975076!3d41.293622592278844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE3JzUwLjMiTiA2OcKwMTQnMzguOSJF!5e0!3m2!1sru!2s!4v1726660627573!5m2!1sru!2s"
