@@ -20,6 +20,7 @@ const HamburgerBtn = () => {
       open={hamburgerBtn}
       onCancel={() => dispatch(setHamburgerBtn())}
       footer={false}
+      className="fixed top-0 left-0 right-0 bottom-0  bg-opacity-75 p-4 overflow-auto"
     >
       <div className="flex justify-center mt-4">
         <ul className="flex flex-col items-center gap-4 text-[18px]">
