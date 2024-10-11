@@ -3,15 +3,25 @@ import {
   MailOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
+import { useEffect } from "react";
+import AOS from "aos";
 import { useTranslation } from "react-i18next";
 const Info = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <>
       <section className="relative top-[-100px] max-md:top-[-50px]">
         <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-            <div className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]">
+            <div
+              className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]"
+              data-aos="fade-right"
+            >
               <PhoneOutlined className="bg-[#f0f0f0] text-[#A8CA3D] rounded-full w-[60px] h-[60px] grid place-items-center text-main text-2xl" />
               <h3 className="font-bold text-center text-[16px] sm:text-[20px] text-[#2a2a2a]">
                 {t("info_title1")}
@@ -20,7 +30,10 @@ const Info = () => {
                 +998 77 111 37 77
               </span>
             </div>
-            <div className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]">
+            <div
+              className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]"
+              data-aos="fade-up"
+            >
               <MailOutlined className="bg-[#f0f0f0] text-[#A8CA3D] rounded-full w-[60px] h-[60px] grid place-items-center text-main text-2xl" />
               <h3 className="font-bold text-center text-[16px] sm:text-[20px] text-[#2a2a2a]">
                 {t("info_title2")}
@@ -29,7 +42,10 @@ const Info = () => {
                 tourland@mail.ru
               </span>
             </div>
-            <div className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]">
+            <div
+              className="md:w-[33%] px-4 w-full bg-white shadow-xl rounded-2xl flex flex-col items-center justify-center gap-5 h-[290px]"
+              data-aos="fade-left"
+            >
               <EnvironmentOutlined className="bg-[#f0f0f0] text-[#A8CA3D] rounded-full w-[60px] h-[60px] grid place-items-center text-main text-2xl" />
               <h3 className="font-bold text-center text-[16px] sm:text-[20px] text-[#2a2a2a]">
                 {t("info_title3")}
@@ -41,7 +57,7 @@ const Info = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section  data-aos="fade-up">
         <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
           <iframe
             className="w-full rounded-t-3xl shadow-card"

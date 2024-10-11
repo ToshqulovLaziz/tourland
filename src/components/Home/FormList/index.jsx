@@ -2,8 +2,15 @@ import { Form, Input, Select, Button } from "antd";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import AOS from "aos";
 const FormList = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   const prefixSelector = "+998";
   const notify = () =>
     toast.success("Success message !", {
@@ -25,7 +32,7 @@ const FormList = () => {
     });
   };
   return (
-    <section className=" mt-[60px]">
+    <section className=" mt-[60px]" data-aos="fade-up">
       <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
         <div className=" shadow-2xl py-[40px] px-[70px] rounded-2xl">
           <h2 className="text-center text-[32px] max-md:text-[26px] max-sm:text-[22px] font-extrabold mb-3">
@@ -87,9 +94,7 @@ const FormList = () => {
                     },
                   ]}
                 >
-                  <Input
-                    addonBefore={prefixSelector}
-                  />
+                  <Input addonBefore={prefixSelector} />
                 </Form.Item>
                 <Form.Item
                   name="date"

@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
-import 'react-toastify/dist/ReactToastify.css';
+import "aos/dist/aos.css";
+import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import Root from "./Root";
 import ProviderConfig from "./tools/provider";

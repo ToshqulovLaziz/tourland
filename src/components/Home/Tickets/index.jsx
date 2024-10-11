@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
 import { useTranslation } from "react-i18next";
 const Tickets = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const ticketsData = [
     {
       id: 1,
@@ -23,10 +30,16 @@ const Tickets = () => {
   return (
     <section className="pt-[70px]">
       <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
-        <h2 className="max-lg:w-[60%] max-sm:w-[80%] m-auto text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]">
+        <h2
+          className="max-lg:w-[60%] max-sm:w-[80%] m-auto text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]"
+          data-aos="fade-up"
+        >
           {t("tickets_title")}
         </h2>
-        <p className="text-center text-[18px] max-sm:text-[14px] w-1/2 max-sm:w-[90%] font-mono m-auto mb-[30px] text-[#2A2A2A]">
+        <p
+          className="text-center text-[18px] max-sm:text-[14px] w-1/2 max-sm:w-[90%] font-mono m-auto mb-[30px] text-[#2A2A2A]"
+          data-aos="fade-up"
+        >
           {t("tickets_subtitle")}
         </p>
         <div>
@@ -39,8 +52,9 @@ const Tickets = () => {
                 className="w-1/3 max-lg:w-full rounded-3xl max-sm:w-[90%]"
                 src={item.img}
                 alt={item.title}
+                data-aos="fade-right"
               />
-              <div>
+              <div data-aos="fade-left">
                 <div className="flex justify-between items-start mb-5  max-sm:items-center">
                   <div>
                     <h3 className="font-bold text-[22px] max-sm:text-[18px] max-sm:w-[80%] mb-1 text-[#2A2A2A]">

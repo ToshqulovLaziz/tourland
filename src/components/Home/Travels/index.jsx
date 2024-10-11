@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { useEffect } from "react";
+import AOS from "aos";
 import {
   CheckOutlined,
   TagOutlined,
@@ -15,10 +17,18 @@ import { setModalVisibility } from "../../../redux/modalSlice";
 
 const Travels = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const dispatch = useDispatch();
   return (
     <>
-      <section className="py-[90px] sm:py-[60px] max-sm:py-[30px]">
+      <section
+        data-aos="fade-up"
+        className="py-[90px] sm:py-[60px] max-sm:py-[30px]"
+      >
         <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
           <h2 className="max-lg:w-[60%] max-sm:w-[80%] m-auto text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]">
             {t("travels_title")}
@@ -56,13 +66,13 @@ const Travels = () => {
                 slidesPerView: 1.5,
               },
               640: {
-                slidesPerView: 1.2, 
+                slidesPerView: 1.2,
               },
               480: {
                 slidesPerView: 1,
               },
               320: {
-                slidesPerView: 1, 
+                slidesPerView: 1,
               },
             }}
           >
@@ -72,6 +82,8 @@ const Travels = () => {
                   className="w-[370px] max-w-full max-md:w-[300px] max-sm:w-full h-[380px] max-sm:h-[350px] m-auto rounded-3xl"
                   src={item.img_url}
                   alt="rasm"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 />
               </SwiperSlide>
             ))}
@@ -79,7 +91,7 @@ const Travels = () => {
         </div>
       </section>
 
-      <section>
+      <section data-aos="fade-up">
         <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
           <h2 className="max-lg:w-[60%] max-sm:w-[80%] m-auto text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]">
             {t("travels_title1")}
@@ -117,19 +129,23 @@ const Travels = () => {
                 slidesPerView: 1.5,
               },
               640: {
-                slidesPerView: 1.2, 
+                slidesPerView: 1.2,
               },
               480: {
                 slidesPerView: 1,
               },
               320: {
-                slidesPerView: 1, 
+                slidesPerView: 1,
               },
             }}
           >
             {travelsData.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="max-sm:w-full m-auto relative">
+                <div
+                  className="max-sm:w-full m-auto relative"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
                   <img
                     className="w-[280px] m-auto max-md:w-[320px] h-[410px] rounded-l-3xl rounded-bl-3xl max-sm:w-full max-sm:h-[400px]"
                     src={item.img_url}

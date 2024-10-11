@@ -4,10 +4,17 @@ import {
   UserOutlined,
   ArrowRightOutlined,
 } from "@ant-design/icons";
+import { useEffect } from "react";
+import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Fackts = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const facktsData = [
     {
       id: 1,
@@ -53,10 +60,16 @@ const Fackts = () => {
   return (
     <section className="py-[90px] max-sm:py-[50px] max-sm:pb-0">
       <div className="container max-w-full sm:max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto">
-        <h2 className="max-lg:w-[60%] max-sm:w-[80%] m-auto max-md:text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]">
+        <h2
+          className="max-lg:w-[60%] max-sm:w-[80%] m-auto max-md:text-center font-bold leading-[70px] max-lg:leading-[30px] max-md:mb-4 max-sm:mb-0 text-[32px] max-lg:text-[24px] max-sm:text-[20px] text-[#2A2A2A]"
+          data-aos="fade-up"
+        >
           {t("fackts_title")}
         </h2>
-        <p className="text-[16px] w-1/2 max-sm:w-full max-md:m-auto max-md:mb-[40px] max-md:text-center font-mono mb-[30px] text-[#2A2A2A]">
+        <p
+          className="text-[16px] w-1/2 max-sm:w-full max-md:m-auto max-md:mb-[40px] max-md:text-center font-mono mb-[30px] text-[#2A2A2A]"
+          data-aos="fade-up"
+        >
           {t("fackts_text")}
         </p>
         <div className="flex flex-col gap-8">
@@ -69,8 +82,9 @@ const Fackts = () => {
                 className="w-1/3 h-[250px] max-md:w-full rounded-3xl max-sm:h-auto"
                 src={item.img}
                 alt={item.title}
+                data-aos="fade-right"
               />
-              <div className={item.id === 3 ? "pl-[27px] max-sm:pl-0" : ""}>
+              <div className={item.id === 3 ? "pl-[27px] max-sm:pl-0" : ""} data-aos="fade-left">
                 <div className="flex justify-between items-start mb-5  max-sm:items-center">
                   <div>
                     <h3 className="font-bold text-[22px] max-sm:text-[18px] mb-1 text-[#2A2A2A]">
