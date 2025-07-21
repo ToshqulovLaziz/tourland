@@ -5,7 +5,7 @@ import languageDetector from "i18next-browser-languagedetector";
 import { store } from "./redux";
 import uzTranslation from "../public/locales/uz.json";
 import enTranslation from "../public/locales/en.json";
-import rusTranslation from "../public/locales/rus.json";
+import rusTranslation from "../public/locales/ru.json";
 
 i18n
   .use(Backend)
